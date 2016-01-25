@@ -8,7 +8,7 @@ public class Demo {
         SomeServiceObject sso = new SomeServiceObject();
         ServiceManager smgr = new ServiceManager();
 
-        smgr.runServiceMgr(sso);
+        smgr.runServiceMgr(sso.getClass());
 
     }
 
