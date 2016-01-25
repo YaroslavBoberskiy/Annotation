@@ -6,8 +6,8 @@ import java.lang.annotation.Target;
 /**
  * Created by YB on 25.01.2016.
  */
-@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 public @interface Service{
-    boolean isService() default true;
+
 }

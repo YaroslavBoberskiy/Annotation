@@ -1,19 +1,21 @@
 /**
  * Created by YB on 25.01.2016.
  */
+
+@Service
 public class SomeServiceObject {
 
-    @Service
+
     public void service1 () {
         System.out.println("start service 1");
     }
 
-    @Service
+
     public void service2 () {
         System.out.println("start service 2");
     }
 
-    @Service
+
     public void service3 () {
         System.out.println("start service 3");
     }
