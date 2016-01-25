@@ -5,17 +5,17 @@
 @Service
 public class SomeServiceObject {
 
-
+    @InitService
     public void service1 () {
         System.out.println("start service 1");
     }
 
-
+    @InitService
     public void service2 () {
         System.out.println("start service 2");
     }
 
-
+    @InitService
     public void service3 () {
         System.out.println("start service 3");
     }
