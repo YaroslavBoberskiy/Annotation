@@ -9,6 +9,7 @@ public class Demo {
         ServiceManager smgr = new ServiceManager();
 
         smgr.runServiceMgr(sso.getClass());
+        System.out.println(smgr.getService(sso.getClass()).getClass().getSimpleName());
 
     }
 

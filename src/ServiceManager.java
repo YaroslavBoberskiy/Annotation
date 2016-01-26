@@ -5,7 +5,20 @@ import java.lang.reflect.Method;
 /**
  * Created by YB on 25.01.2016.
  */
-public class ServiceManager {
+public class ServiceManager<T> {
+
+    public T getService (Class clss) {
+        T obj = null;
+        try {
+            obj = (T) clss.newInstance();
+            return obj;
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+       return obj;
+    }
 
     public void runServiceMgr(Class clss) {
 
